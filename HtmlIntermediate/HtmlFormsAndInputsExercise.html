@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Html - Forms & Inputs Exercise</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Register</h1>
+        <form action="">
+           
+               
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="FirstName" id="firstname" placeholder="John" required>
+                    
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="LastName" id="lastname" placeholder="Doe" required>
+                
+                
+                <div> 
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="mal">
+                    <label for="female">Female</label> 
+                    <input type="radio" name="gender" id="female" value="fem">
+                    <label for="other">Other</label> 
+                    <input type="radio" name="gender" id="other" value="oth"> 
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="email" placeholder="Email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" name="Pass" id="password" pattern=".{5,10}" required title="5 to 10 characters!">
+                </div>
+                    
+               
+                <div>
+                    <label>
+                        Birthday:
+                        <select name="month" >
+                            <option value="-">Month</option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">February</option>
+                            <option value="Mar">March</option>
+                        </select>
+                        <select name="day">
+                            <option value="-">Day</option>
+                            <option value="first">1</option>
+                            <option value="second">2</option>
+                            <option value="third">3</option>
+                        </select>
+                        <select name="year">
+                            <option value="-">Year</option>
+                            <option value="93">1993</option>
+                            <option value="95">1995</option>
+                            <option value="98">1998</option>
+                        </select>
+                    </label>    
+                </div>
+                <div>
+                    <label for="check">I agree to the terms and conditions:</label>
+                    <input type="checkbox" name="Agreed" id="check">  
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>  
+              
+        </form>
+        <script src="" async defer></script>
+    </body>
+</html>
