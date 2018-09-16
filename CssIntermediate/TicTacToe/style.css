@@ -5,15 +5,19 @@ td{
     height:100px;
 
 }
+
 td:nth-of-type(3){
     border-right: none;
 }
+
 tr:nth-of-type(3) td {
     border-bottom: none;
 }
+
 table{
     margin:auto;
 }
+
 h1{
     text-align: center;
 }
