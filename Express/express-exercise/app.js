@@ -20,7 +20,7 @@ app.get("/speak/:animal", function(req, res){
 
 app.get("/repeat/:word/:num", function(req,res){
     var word = req.params.word;
-    var num= Num(req.params.word);
+    var num= Number(req.params.num);
     var result="";
 
     for(var i =0; i<num;i++){
@@ -33,6 +33,6 @@ app.get("*", function(req,res){
     res.send("Sorry page not found... What are you doing with your life!");
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(3000, '127.0.0.1', function(){
     console.log("Server has started");
 });
